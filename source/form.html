@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -58,7 +59,7 @@
           method="post"
         >
           <label for="catName"
-            >ИМЯ:*
+            >Имя:*
             <input
               type="text"
               id="catName"
@@ -133,14 +134,14 @@
             </ul>
           </fieldset>
 
-          <h2 class="form__contacts contacts-tittle">
+          <h2 class="form__subtitle contacts-tittle">
             Контактные данные (владельца кота)
           </h2>
           <label for="eMail">E-mail:*</label>
           <input
             type="text"
             id="eMail"
-            class="form__email"
+            class="form__field"
             placeholder="Электронная почта"
             name="email"
             value="kuklachev@gmail.com"
@@ -156,19 +157,21 @@
             value="8 (960) 900-60-90"
             required
           />
-          <h2 class="form__comment comment-tittle">Комментарий</h2>
+          <h2 class="form__subtitle comment-tittle">Комментарий</h2>
 
           <input
             type="text"
             id="comment"
-            class="form__comment"
+            class="form__comment form__field"
             placeholder="Комментарий"
             name="comment"
             value="Расскажите обо всех повадках кота"
           />
 
           <fieldset class="form__additionally">
-            <legend class="additionally__title">Дополнительно</legend>
+            <legend class="form__subtitle additionally__title">
+              Дополнительно
+            </legend>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <label class="control">
@@ -217,7 +220,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button-apply" type="submit">
+          <button class="form__button-apply button" type="submit">
             отправить заявку
           </button>
           <p class="form__star-text">* — Обязательные поля</p>
