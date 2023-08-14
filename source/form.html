@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -58,105 +59,113 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="catName"
-            >Имя:*
-            <input
-              type="text"
-              id="catName"
-              class="form__field"
-              placeholder="Имя питомца"
-              name="cat-name"
-              value="Барсик"
-              required
-          /></label>
-          <label for="catWeight"
-            >Вес (кг):*
-            <input
-              type="text"
-              id="catWeight"
-              class="form__field"
-              placeholder="Вес питомца"
-              name="cat-weight"
-              value="7"
-              required
-          /></label>
-          <label for="catAge"
-            >Возраст (лет):
-            <input
-              type="text"
-              id="catAge"
-              class="form__field"
-              placeholder="Возраст питомца"
-              name="cat-age"
-              value="7"
-          /></label>
+          <div class="form__selection">
+            <div class="form__characteristic">
+              <label for="catName"
+                >Имя:*
+                <input
+                  type="text"
+                  id="catName"
+                  class="form__field"
+                  placeholder="Имя питомца"
+                  name="cat-name"
+                  value="Барсик"
+                  required
+              /></label>
+              <label for="catWeight"
+                >Вес (кг):*
+                <input
+                  type="text"
+                  id="catWeight"
+                  class="form__field"
+                  placeholder="Вес питомца"
+                  name="cat-weight"
+                  value="7"
+                  required
+              /></label>
+              <label for="catAge"
+                >Возраст (лет):
+                <input
+                  type="text"
+                  id="catAge"
+                  class="form__field"
+                  placeholder="Возраст питомца"
+                  name="cat-age"
+                  value="7"
+              /></label>
+            </div>
 
-          <fieldset class="form__filter-group">
-            <legend class="visually-hidden">Программа питания:</legend>
-            <ul class="form__filter-list">
-              <li class="form__filter-item">
-                <label class="control">
-                  <input
-                    class="visually-hidden control-input"
-                    type="radio"
-                    name="nutrition-type"
-                    value="weight-loss"
-                    checked
-                  />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Похудение</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="visually-hidden control-input"
-                    type="radio"
-                    name="nutrition-type"
-                    value="weight-gain"
-                  />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Набор массы</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="visually-hidden control-input"
-                    type="radio"
-                    name="nutrition-type"
-                    value="unknown"
-                  />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
+            <fieldset class="form__filter-group">
+              <legend class="visually-hidden">Программа питания:</legend>
+              <ul class="form__filter-list">
+                <li class="form__filter-item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control-input"
+                      type="radio"
+                      name="nutrition-type"
+                      value="weight-loss"
+                      checked
+                    />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control-input"
+                      type="radio"
+                      name="nutrition-type"
+                      value="weight-gain"
+                    />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="visually-hidden control-input"
+                      type="radio"
+                      name="nutrition-type"
+                      value="unknown"
+                    />
+                    <span class="control-mark"></span>
+                    <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <h2 class="form__subtitle contacts-tittle">
             Контактные данные (владельца кота)
           </h2>
-          <label for="eMail">E-mail:*</label>
-          <input
-            type="text"
-            id="eMail"
-            class="form__field"
-            placeholder="Электронная почта"
-            name="email"
-            value="kuklachev@gmail.com"
-            required
-          />
-          <label for="phone">Телефон:*</label>
-          <input
-            type="text"
-            id="phone"
-            class="form__field"
-            placeholder="Телефон"
-            name="phone"
-            value="8 (960) 900-60-90"
-            required
-          />
+          <div class="form__contacts">
+            <label for="eMail"
+              >E-mail:*
+              <input
+                type="text"
+                id="eMail"
+                class="form__field"
+                placeholder="Электронная почта"
+                name="email"
+                value="kuklachev@gmail.com"
+                required
+            /></label>
+            <label for="phone"
+              >Телефон:*
+              <input
+                type="text"
+                id="phone"
+                class="form__field"
+                placeholder="Телефон"
+                name="phone"
+                value="8 (960) 900-60-90"
+                required
+            /></label>
+          </div>
+
           <h2 class="form__subtitle comment-tittle">Комментарий</h2>
 
           <input

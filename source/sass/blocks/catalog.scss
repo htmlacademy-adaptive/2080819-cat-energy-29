@@ -13,8 +13,20 @@
 
 .catalog__list {
   margin: 0;
-  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 320px;
+  padding: 20px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 63px 80px;
+  }
 }
 
 .product-card__title {

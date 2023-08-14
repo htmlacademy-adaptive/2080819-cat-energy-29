@@ -1,5 +1,9 @@
 .example {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example__tittle {

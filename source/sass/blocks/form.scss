@@ -6,6 +6,21 @@
   line-height: 36px;
 }
 
+.form__characteristic {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .form__text {
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -33,7 +48,6 @@
   color: #444444;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -42,4 +56,21 @@
   color: #000000;
   text-align: center;
   line-height: 16px;
+}
+
+.additionally__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 192px 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 192px 192px 192px 192px;
+  }
+}
+
+.form__selection {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
