@@ -30,3 +30,22 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.additional__card-wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional__list-item {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

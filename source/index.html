@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -109,39 +110,45 @@
       </section>
 
       <section class="example">
-        <h2 class="example__tittle">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">5 кг</dt>
-            <dd class="example__description">Снижение веса</dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__number">60 дней</dt>
-            <dd class="example__description">Затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__text">Затраты на питание: 15 000 руб.</p>
-        <!-- тут будет слайдер -->
-        <img
-          class="example__img-before"
-          src="img/mobile_before.png"
-          width="280"
-          height="256"
-          alt="Тучный котик"
-        />
+        <div class="example__container">
+          <h2 class="example__tittle">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
+          </p>
+          <dl class="example__list">
+            <div class="example__item">
+              <dt class="example__number">5 кг</dt>
+              <dd class="example__description">Снижение веса</dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__number">60 дней</dt>
+              <dd class="example__description">Затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="example__text">Затраты на питание: 15 000 руб.</p>
+        </div>
 
-        <img
-          class="example__img-after"
-          src="img/mobile_after.png"
-          width="280"
-          height="256"
-          alt="Стройный котик"
-        />
+        <!-- тут будет слайдер -->
+        <div class="example__slider">
+          <img
+            class="example__img-before"
+            src="img/mobile_before.png"
+            width="280"
+            height="256"
+            alt="Тучный котик"
+          />
+
+          <img
+            class="example__img-after"
+            src="img/mobile_after.png"
+            width="280"
+            height="256"
+            alt="Стройный котик"
+          />
+        </div>
       </section>
     </main>
 

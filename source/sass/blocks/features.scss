@@ -8,7 +8,22 @@
 }
 
 .features__list {
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    gap: 30px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 230px 230px 230px 230px;
+    gap: 95px;
+  }
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 26px;
 }
