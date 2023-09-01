@@ -1,5 +1,5 @@
 .additional__title {
-  color: #000000;
+  color: $tittle-color;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -11,6 +11,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 896px;
+    border: none;
+  }
 }
 
 .additional__card-title {
@@ -23,12 +32,51 @@
   text-transform: uppercase;
 }
 
+.additional__offer-wrap {
+  background-image: url("../img/additional_back_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-height: 290px;
+  padding: 187px 60px 43px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(104, 183, 56, 0.85);
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/additional_back_tablet.jpg");
+    min-height: 200px;
+    padding: 71px 125px 69px 425px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    width: 245px;
+  }
+}
+
 .additional__offer {
-  background-color: rgba(104, 183, 56, 0.85);
-  color: #ffffff;
+  color: $basic-light;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 165px;
+  }
 }
 
 .additional__card-wrap {
@@ -41,11 +89,42 @@
 .additional__content {
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 81px;
+    // width: 1220px;
   }
 }
 
 .additional__list-item {
-  @media (min-width: $desktop-width) {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
   }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    width: 894px;
+    gap: 40px;
+    padding: 15px 0 17px;
+  }
+}
+
+.additional__card-specification {
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.additional__card-specification .column-1 {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.additional__card-specification .column-2 {
+  text-align: right;
 }
