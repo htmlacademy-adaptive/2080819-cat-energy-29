@@ -1,16 +1,143 @@
 .main-footer {
-  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.main-footer__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-footer__invite {
+  background-color: $basic-light;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 61px 70px;
+    gap: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    gap: 87px;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    padding: 60px 80px;
+  }
 }
 
 .main-footer__invitation {
-  color: #111111;
+  color: $tittle-color;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.main-footer__address {
+.main-footer__address-wrap address {
   line-height: 20px;
   font-style: normal;
+}
+
+.main-footer iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 362px;
+  background-image: url("../img/map_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../img/map_tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    background-image: url("../img/map_desktop.jpg");
+  }
+}
+
+.main-footer__wrap {
+  background-color: $additional-color;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
+}
+
+.main-footer__logo-words {
+  text-align: center;
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.main-footer__htmlacademy-link {
+  align-self: flex-end;
 }
