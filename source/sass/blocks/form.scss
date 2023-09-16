@@ -103,6 +103,18 @@
   }
 }
 
+.form input:hover {
+  border-color: #cdcdcd;
+}
+
+.form input:active {
+  border-color: #444444;
+}
+
+.form input:invalid {
+  border: 2px solid #ff8282;
+}
+
 .form .form__comment {
   width: 280px;
   min-height: 150px;
@@ -116,6 +128,10 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+}
+
+.form__comment value {
+  color: gold;
 }
 
 .form__field {
@@ -209,8 +225,12 @@
   border: 1px solid #cdcdcd;
 }
 
-.control-input:focus + .control-mark {
-  opacity: 0.6;
+.control-input:hover + .control-mark {
+  border: 1px solid #bababa;
+}
+
+.control-input:disabled + .control-mark + .control-label {
+  opacity: 0.3;
 }
 
 .additionally__item {

@@ -117,6 +117,14 @@
   }
 }
 
+a .main-footer__logo-words-image:hover {
+  opacity: 0.6;
+}
+
+a .main-footer__logo-words-image:active {
+  opacity: 0.3;
+}
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -153,6 +161,10 @@ a.main-footer__htmlacademy-link {
   &:hover {
     fill: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__htmlacademy-link {
@@ -169,4 +181,8 @@ a.main-footer__htmlacademy-link {
 
     margin-right: 23px;
   }
+}
+
+a.main-footer__htmlacademy-link:active {
+  opacity: 0.3;
 }
