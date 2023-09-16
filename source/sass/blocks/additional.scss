@@ -61,6 +61,28 @@
   }
 }
 
+.additional__offer-wrap ::after {
+  content: "";
+  background-image: url("../img/sprite.svg#gift");
+  width: 78px;
+  height: 81px;
+  position: absolute;
+  top: -130px;
+  left: 47px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    top: -10px;
+    left: -330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -130px;
+    left: 44px;
+  }
+}
+
 .additional__offer {
   color: $basic-light;
   text-align: center;

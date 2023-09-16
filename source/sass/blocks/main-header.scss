@@ -16,25 +16,35 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding-top: 55px;
-
-    left: 0;
-    top: 0;
-    z-index: 1;
   }
 }
 
 .main-header__index {
   @media (min-width: $desktop-width) {
     position: absolute;
+
+    left: 110px;
+    top: 55px;
+    z-index: 1;
+    padding: 0;
   }
 }
 
 a.main-header__logo {
   display: block;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+}
+
+a.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+a.main-header__logo:active {
+  opacity: 0.6;
 }
 
 .main-header__logo-words-image {
@@ -145,6 +155,7 @@ a.main-header__logo {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
+    margin-top: 14px;
   }
 }
 
@@ -163,10 +174,37 @@ a.main-header__logo {
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
     border-bottom: none;
     padding: 0;
     padding-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+a.site-list__item--current::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  border-top: 2px solid #68b738;
+}
+
+.site-list__index a.site-list__item--current::before {
+  border-top: 2px solid #ffffff;
 }
 
 .site-list__index a {

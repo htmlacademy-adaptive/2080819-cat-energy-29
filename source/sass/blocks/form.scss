@@ -75,6 +75,18 @@
   gap: 13px;
   grid-template-columns: auto 1fr;
   margin-bottom: 14px;
+  position: relative;
+}
+
+.icon-svg {
+  position: absolute;
+  content: "";
+  mask-image: url("../img/sprite.svg#input-phone");
+  background-color: #222222;
+  width: 21px;
+  height: 20px;
+  right: 10px;
+  top: 10px;
 }
 
 .form input {
@@ -224,7 +236,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("#");
+  background-image: url("../img/sprite.svg#mark");
   width: 20px;
   height: 20px;
 }
