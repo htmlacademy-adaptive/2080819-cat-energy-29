@@ -3,13 +3,43 @@
 }
 
 .catalog__item {
-  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 40px 37px;
     background-color: $additional-color;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.catalog__item::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+}
+
+.catalog__item:first-child::before {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    content: none;
   }
 }
 
@@ -73,6 +103,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
@@ -135,5 +166,66 @@
 .product-card__buttom {
   @media (min-width: $tablet-width) {
     margin-top: auto;
+  }
+}
+
+.product-card--more {
+  padding-top: 78px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 127px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+    background-color: #ffffff;
+    padding-top: 150px;
+
+    &::before,
+    &::after {
+      top: 70px;
+      left: 127px;
+      width: 60px;
+      height: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      top: 70px;
+      left: 90px;
+    }
+  }
+}
+
+.product-card--more .product-card__title {
+  width: 280px;
+  text-align: center;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+  }
+}
+
+.product-card__text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
   }
 }
