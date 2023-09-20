@@ -1,12 +1,12 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $basic-light;
+  background-color: $basic-bright;
   text-align: center;
   padding: 10px;
   display: block;
@@ -22,16 +22,16 @@
 }
 
 .button--secondary {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $text-color;
+  background-color: $additional-color;
 }
 
 .button--secondary:hover {
-  color: #444444;
+  color: $text-color;
   background-color: #ebebeb;
 }
 
 .button--secondary:active {
-  color: #444444;
+  color: $text-color;
   background-color: #ebebeb;
 }

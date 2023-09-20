@@ -1,15 +1,11 @@
 .main-footer {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  box-sizing: border-box;
-
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    background-color: #f2f2f2;
   }
 }
 
@@ -23,13 +19,13 @@
   background-color: $basic-light;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 20px;
-  width: 320px;
+  padding: 26px 0;
+  // width: 320px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 61px 70px;
+    padding: 41px 50px 55px;
     gap: 300px;
   }
 
@@ -37,7 +33,7 @@
     position: absolute;
     gap: 87px;
     top: 95px;
-    left: 110px;
+    left: 0;
     width: 565px;
     padding: 60px 80px;
   }
@@ -45,16 +41,33 @@
 
 .main-footer__invitation {
   color: $tittle-color;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .main-footer__address-wrap address {
   line-height: 20px;
   font-style: normal;
+}
+
+.main-footer__address-wrap {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-right: 1px;
+  }
 }
 
 .main-footer iframe {
@@ -83,17 +96,26 @@
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 37px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 56px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding: 66px 1px;
+  }
+}
+
+.main-footer__logo-words-image {
+  width: 128px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
   }
 }
 
@@ -179,7 +201,19 @@ a.main-footer__htmlacademy-link {
   @media (min-width: $tablet-width) {
     position: static;
 
-    margin-right: 23px;
+    margin-right: 19px;
+  }
+}
+
+.html-logo {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
