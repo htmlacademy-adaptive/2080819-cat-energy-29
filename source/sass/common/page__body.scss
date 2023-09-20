@@ -1,6 +1,6 @@
 .page__body {
   color: $text-color;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -24,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1220px;
+    padding: 0;
   }
 }
